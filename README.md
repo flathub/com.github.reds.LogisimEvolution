@@ -15,5 +15,5 @@ flatpak run --env=_JAVA_AWT_WM_NONREPARENTING=1 com.github.reds.LogisimEvolution
 Permanently:
 
 ```bash
-flatpak override --env=_JAVA_AWT_WM_NONREPARENTING=1 com.github.reds.LogisimEvolution # Add --user if it is installer per user
+flatpak override --env=_JAVA_AWT_WM_NONREPARENTING=1 com.github.reds.LogisimEvolution # Add '--user' if it is installed per user
 ```
