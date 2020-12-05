@@ -28,6 +28,7 @@ modules:
     build-commands:
         - install -D com.github.reds.LogisimEvolution.metainfo.xml /app/share/metainfo/com.github.reds.LogisimEvolution.metainfo.xml
         - install -D com.github.reds.LogisimEvolution.png /app/share/icons/hicolor/128x128/apps/com.github.reds.LogisimEvolution.png
+        - install -D com.github.reds.LogisimEvolution.svg /app/share/icons/hicolor/scalable/apps/com.github.reds.LogisimEvolution.svg
         - install -D LogisimEvolution.jar /app/bin/LogisimEvolution.jar
         - install -D LogisimEvolution.sh /app/bin/LogisimEvolution.sh
         - install -D com.github.reds.LogisimEvolution.desktop /app/share/applications/com.github.reds.LogisimEvolution.desktop
@@ -39,6 +40,8 @@ modules:
         path: com.github.reds.LogisimEvolution.png
       - type: file
         path: com.github.reds.LogisimEvolution.desktop
+      - type: file
+        path: com.github.reds.LogisimEvolution.svg
       - type: file
         path: LogisimEvolution.sh
       - type: file
