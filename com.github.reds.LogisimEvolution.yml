@@ -4,7 +4,7 @@ runtime-version: '20.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk
-  
+
 command: LogisimEvolution.sh
 finish-args:
   - --socket=x11
@@ -14,8 +14,8 @@ finish-args:
   - --persist=.java
 
 build-options:
-    env:
-        JAVA_HOME: /usr/lib/sdk/openjdk/
+  env:
+    JAVA_HOME: /usr/lib/sdk/openjdk/
 
 modules:
   - name: openjdk
@@ -26,13 +26,13 @@ modules:
   - name: LogisimEvolution
     buildsystem: simple
     build-commands:
-        - install -D com.github.reds.LogisimEvolution.metainfo.xml /app/share/metainfo/com.github.reds.LogisimEvolution.metainfo.xml
-        - install -D com.github.reds.LogisimEvolution.png /app/share/icons/hicolor/128x128/apps/com.github.reds.LogisimEvolution.png
-        - install -D com.github.reds.LogisimEvolution.svg /app/share/icons/hicolor/scalable/apps/com.github.reds.LogisimEvolution.svg
-        - install -D LogisimEvolution.jar /app/bin/LogisimEvolution.jar
-        - install -D LogisimEvolution.sh /app/bin/LogisimEvolution.sh
-        - install -D com.github.reds.LogisimEvolution.desktop /app/share/applications/com.github.reds.LogisimEvolution.desktop
-        - install -D com.github.reds.LogisimEvolution.xml /app/share/mime/packages/com.github.reds.LogisimEvolution.xml
+      - install -D com.github.reds.LogisimEvolution.metainfo.xml /app/share/metainfo/com.github.reds.LogisimEvolution.metainfo.xml
+      - install -D com.github.reds.LogisimEvolution.png /app/share/icons/hicolor/128x128/apps/com.github.reds.LogisimEvolution.png
+      - install -D com.github.reds.LogisimEvolution.svg /app/share/icons/hicolor/scalable/apps/com.github.reds.LogisimEvolution.svg
+      - install -D LogisimEvolution.jar /app/bin/LogisimEvolution.jar
+      - install -D LogisimEvolution.sh /app/bin/LogisimEvolution.sh
+      - install -D com.github.reds.LogisimEvolution.desktop /app/share/applications/com.github.reds.LogisimEvolution.desktop
+      - install -D com.github.reds.LogisimEvolution.xml /app/share/mime/packages/com.github.reds.LogisimEvolution.xml
     sources:
       - type: file
         path: com.github.reds.LogisimEvolution.metainfo.xml
@@ -49,9 +49,9 @@ modules:
         url: https://raw.githubusercontent.com/reds-heig/logisim-evolution/master/support/Flatpak/com.github.reds.LogisimEvolution.xml
         sha256: 6023d82aa192d089f55feece2c29874de94a5231e18efd2caf9baf03486badd7
       - type: file
-        url: https://github.com/reds-heig/logisim-evolution/releases/download/v3.4.1/logisim-evolution-3.4.1-all.jar
+        url: https://github.com/reds-heig/logisim-evolution/releases/download/v3.4.2/logisim-evolution-3.4.2-all.jar
         dest-filename: LogisimEvolution.jar
-        sha256: 1b72dd3397290b7be95f886b933bd37a2d9182b8d33247fa5f059d0867e8111c
+        sha256: 60a8419119fc527c28ee9b383fc982772e4c7036dd515f75471153e87d7e7f76
         x-checker-data:
           type: anitya
           project-id: 155486
