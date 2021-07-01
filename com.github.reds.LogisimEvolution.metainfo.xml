@@ -9,29 +9,24 @@
  <developer_name>REDS institute</developer_name>
  <url type="homepage">https://github.com/reds-heig/logisim-evolution</url>
  <description>
-  <p>
-  Logisim is an educational tool for designing and simulating digital logic circuits.
-  It has been originally created by Dr. Carl Burch and actively developed until 2011.
-  After this date the author focused on other projects, and recently the development
-  has been officially stopped.
-</p>
-  <p>
-  In the meantime, people from a group of swiss institutes (Haute École Spécialisée Bernoise,
-  Haute École du paysage, d'ingénierie et d'architecture de Genève,
-  and Haute École d'Ingénierie et de Gestion du Canton de Vaud) started developing
-  a version of Logisim that fitted their courses, integrating several tools – for instance
-  a chronogram, the possibility to test the schematics directly on an electronic board,
-  TCL/TK consoles, etc.
-</p>
-  <p>
-  We have decided to release this new Logisim version under the name logisim-evolution,
-  to highlight the large number of changes that occurred in these years,
-  and we actively seek the contribution of the community.
-</p>
+  <p>Logisim-evolution is a completely free and open-source educational, cross-platform software for designing and simulating digital logic circuits.</p>
+  <p>Project highlights:</p>
+  <ul>
+    <li>easy to use circuit designer</li>
+    <li>logic circuit simulations</li>
+    <li>chronogram (to see the evolution of signals in your circuit)</li>
+    <li>electronic board integration - schematics can now be simulated on real hardware</li>
+    <li>VHDL components (components whose behavior is specified in VHDL!)</li>
+    <li>TCL/TK console (interfaces between the circuit and the user)</li>
+    <li>huge library of components (LEDs, TTLs, switches, SoCs)</li>
+    <li>Supports multiple languages</li>
+    <li>and more!</li>
+  </ul>
  </description>
  <screenshots>
   <screenshot type="default">
-   <image>http://www.cburch.com/logisim/shot-2.7.0.png</image>
+   <image>https://raw.githubusercontent.com/logisim-evolution/logisim-evolution/develop/docs/img/logisim-evolution-01.png</image>
+   <image>https://raw.githubusercontent.com/logisim-evolution/logisim-evolution/develop/docs/img/logisim-evolution-02.png</image>
   </screenshot>
  </screenshots>
  <releases>
