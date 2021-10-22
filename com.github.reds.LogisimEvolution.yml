@@ -46,9 +46,9 @@ modules:
         url: https://raw.githubusercontent.com/logisim-evolution/logisim-evolution/master/support/Flatpak/com.github.reds.LogisimEvolution.xml
         sha256: 49229e0ab98da462760328eacba7a8168db1d8901e103dba66004f447ebb15cc
       - type: file
-        url: https://github.com/logisim-evolution/logisim-evolution/releases/download/v3.7.0/logisim-evolution-3.7.0-all.jar
+        url: https://github.com/logisim-evolution/logisim-evolution/releases/download/v3.7.1/logisim-evolution-3.7.1-all.jar
         dest-filename: LogisimEvolution.jar
-        sha256: 44a0e6af326afd3668eb8f4dfd7132e5c4651d9b738792bf50f360100e747da7
+        sha256: d048dca69eb8c3865ec5e11296804d9cd68d118a91783af66328de6fe15f0913
         x-checker-data:
           type: anitya
           project-id: 155486
