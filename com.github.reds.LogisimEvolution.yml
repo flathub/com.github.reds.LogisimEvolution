@@ -11,6 +11,7 @@ finish-args:
   - --env=JAVA_HOME=/app/jre
   - --filesystem=home
   - --persist=.java
+  - --share=ipc
 
 build-options:
   env:
