@@ -49,7 +49,7 @@ modules:
       - type: file
         url: https://github.com/logisim-evolution/logisim-evolution/releases/download/v3.8.0/logisim-evolution-3.8.0-all.jar
         dest-filename: LogisimEvolution.jar
-        sha256: 6023d82aa192d089f55feece2c29874de94a5231e18efd2caf9baf03486badd7
+        sha256: 4c59be7dadc2329d0e3219ca05ce9c2c858641b206fcea4e3821bb79aef06c2c
         x-checker-data:
           type: anitya
           project-id: 155486
