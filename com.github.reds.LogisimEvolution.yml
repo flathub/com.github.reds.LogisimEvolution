@@ -1,9 +1,9 @@
 app-id: com.github.reds.LogisimEvolution
 runtime: org.freedesktop.Platform
-runtime-version: '21.08'
+runtime-version: '22.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.openjdk
+  - org.freedesktop.Sdk.Extension.openjdk17
 command: LogisimEvolution.sh
 finish-args:
   - --socket=x11
@@ -15,13 +15,13 @@ finish-args:
 
 build-options:
   env:
-    JAVA_HOME: /usr/lib/sdk/openjdk/
+    JAVA_HOME: /usr/lib/sdk/openjdk17/
 
 modules:
   - name: openjdk
     buildsystem: simple
     build-commands:
-      - /usr/lib/sdk/openjdk/install.sh
+      - /usr/lib/sdk/openjdk17/install.sh
 
   - name: LogisimEvolution
     buildsystem: simple
