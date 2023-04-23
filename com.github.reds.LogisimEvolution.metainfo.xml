@@ -3,7 +3,7 @@
  <id>com.github.reds.LogisimEvolution</id>
  <metadata_license>CC0-1.0</metadata_license>
  <project_license>GPL-3.0</project_license>
- <name>Logisim Evolution</name>
+ <name>Logisim-evolution</name>
  <summary>Digital logic designer and simulator</summary>
  <developer_name>Logisim-evolution developers</developer_name>
  <url type="homepage">https://github.com/logisim-evolution/logisim-evolution</url>
