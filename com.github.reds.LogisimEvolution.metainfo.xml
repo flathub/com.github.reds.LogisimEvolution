@@ -76,7 +76,7 @@
      <ul>
       <li>Reworked the slider component in the I/O extra library.</li>
       <li>Tick clock frequency display moved to left corner. It's also bigger and text color is configurable.</li>
-      <li>Completely rewritten command line argument parser:</li>
+      <li>Completely rewritten command line argument parser:
        <ul>
         <li>All options have both short and long version now,</li>
         <li>All long arguments require `--` prefix i.e. `--version`,</li>
@@ -90,6 +90,7 @@
         <li>`-test-fpga-implementation` is now `--test-fpga` or `-f`,</li>
         <li>`-questa` is removed.</li>
        </ul>
+      </li>
       <li>PortIO HDL generator and component bug-fixed.</li>
       <li>Cleanup/rework of the HDL-generation.</li>
       <li>Each circuit stores/restores the last board used for Download (handy for templates to give to students)</li>
@@ -108,43 +109,45 @@
    <release version="3.6.0" date="2021-09-05"/>
     <description>
      <ul>
-      <li>Introducing project logo.
-      <li>Fixed project loader to correctly handle hex values with a 1 in bit 63rd.
-      <li>Added TTL74x34 hex buffer gate.
-      <li>Made pins' tooltips more descriptive for 74161.
-      <li>Added new component LED Bar.
-      <li>Added 74157 and 74158: Quad 2-line to1-line selectors.
-      <li>Added option to configure canvas' and grid's colors.
-      <li>Added DIP switch state visual feedback for ON state.
-      <li>Augmented direction verbal labels (East, North, etc), with corresponding arrow symbols.
-      <li>Application title string now adds app name/version at the very end of the title.
-      <li>Added option to configure size of connection pin markers.
-      <li>Added TTL 74x139: dual 2-line to 4-lines decoders.
-      <li>Fixed missing port on DotMatrix.
+      <li>Introducing project logo.</li>
+      <li>Fixed project loader to correctly handle hex values with a 1 in bit 63rd.</li>
+      <li>Added TTL74x34 hex buffer gate.</li>
+      <li>Made pins' tooltips more descriptive for 74161.</li>
+      <li>Added new component LED Bar.</li>
+      <li>Added 74157 and 74158: Quad 2-line to1-line selectors.</li>
+      <li>Added option to configure canvas' and grid's colors.</li>
+      <li>Added DIP switch state visual feedback for ON state.</li>
+      <li>Augmented direction verbal labels (East, North, etc), with corresponding arrow symbols.</li>
+      <li>Application title string now adds app name/version at the very end of the title.</li>
+      <li>Added option to configure size of connection pin markers.</li>
+      <li>Added TTL 74x139: dual 2-line to 4-lines decoders.</li>
+      <li>Fixed missing port on DotMatrix.</li>
       <li>Combined `Select Location` from Plexers and `Gate Location` from Wiring to one attribute.
        <ul>
         <li>comparability for Transistors and Transmission Gates.
             When opening old .circ files, they will have the default `Select Location` ("Bottom/Left").</li>
        </ul>
-      <li>Replace DarkLaf with FlatLaf for better compatibility.
-      <li>Adds "Rotate Left" context menu action.
-      <li>Display "Too few inputs for table" if Karnaugh Map has only 1 input.
-      <li>HexDisplay is stays blank if no valid data is fed instead of showing "H" [#365].
-      <li>Project's "Dirty" (unsaved) state is now also reflected by adding `*` marker to the window title.
-      <li>Support for `AnimatedIcon` has been completely removed.
-      <li>Canvas Zoom controls new offer wider range of zoom and three level of granularity.
-      <li>Added predefined quick zoom buttons.
-      <li>Tons of code cleanup and internal improvements.
-      <li>Added duplicated component placement on same location refusal
-      <li>Fixed pin duplication on load in case a custom apearance is used for a circuit
-      <li>Added LED-array support for FPGA-boards
-      <li>Improved partial placement on FPGA-boards for multi-pin components
-      <li>Fixed several small bugs
+      </li>
+      <li>Replace DarkLaf with FlatLaf for better compatibility.</li>
+      <li>Adds "Rotate Left" context menu action.</li>
+      <li>Display "Too few inputs for table" if Karnaugh Map has only 1 input.</li>
+      <li>HexDisplay is stays blank if no valid data is fed instead of showing "H" [#365].</li>
+      <li>Project's "Dirty" (unsaved) state is now also reflected by adding `*` marker to the window title.</li>
+      <li>Support for `AnimatedIcon` has been completely removed.</li>
+      <li>Canvas Zoom controls new offer wider range of zoom and three level of granularity.</li>
+      <li>Added predefined quick zoom buttons.</li>
+      <li>Tons of code cleanup and internal improvements.</li>
+      <li>Added duplicated component placement on same location refusal</li>
+      <li>Fixed pin duplication on load in case a custom apearance is used for a circuit</li>
+      <li>Added LED-array support for FPGA-boards</li>
+      <li>Improved partial placement on FPGA-boards for multi-pin components</li>
+      <li>Fixed several small bugs</li>
       <li>Each circuit will now remember, restore, and save:
        <ul>
         <li>The last tick-frequency used for simulation</li>
         <li>The last download frequency used</li>
        </ul>
+      </li>
       <li>Removed obsolete VHDL-Architecture attribute from circuit</li>
      </ul>
     </description>
