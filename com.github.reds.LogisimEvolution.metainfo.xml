@@ -30,12 +30,130 @@
  </screenshots>
  <releases>
    <release version="3.8.0" date="2022-10-02"/>
+    <description>
+     <ul>
+      <li>Added reset value attribute to input pins</li>
+      <li>Fixed boolean algebra minimal form bug</li>
+      <li>Fixed random fill Rom bug</li>
+      <li>Added TTL 74164, 74192 and 74193.</li>
+      <li>Fixed off grid components bug that could lead to OutOfMemory error.</li>
+      <li>Removed autolabler for tunnels, such that all get the same label in case of renaming.</li>
+      <li>Fixed bug preventing TTL 7442, 7443 and 7444 from being placed on the circuit canvas.</li>
+      <li>Sub-circuit can now be deleted with `DELETE` key, along with `BACKSPACE` used so far.</li>
+      <li>Fixed `Simulate` -> `Timing Diagram` not opening when using "Nimbus" look and feel.</li>
+      <li>Fixed pressing `CTRL`+`0` selecting the wrong element in the toolbar.</li>
+      <li>Fixed TTL 7485 `7485HdlGenerator` generating wrong HDL type.</li>
+      <li>Fixed TTL 74139, 7447 outputting inverted logic</li>
+      <li>Fixed TTL 74175, CLR inverted</li>
+      <li>Fixed TTL 7436 pin arrangement</li>
+      <li>Added TTL 74138: 3-line to 8-line decoder</li>
+      <li>Added TTL 74240, 74241, 74244: octal buffers with three-state outputs.</li>
+      <li>Added TTL 74245: octal bus transceivers with three-state outputs.</li>
+      <li>Moved TTL 74266 to 747266, correctly reimplemented 74266 with open-collector outputs.</li>
+      <li>Fixed TTL 74165, correct order of inputs, load asynchronously</li>
+      <li>Added TTL 74166: 8-bit parallel-to-serial shift register with clear</li>
+      <li>Removed fixed LM_Licence setting</li>
+     </ul>
+    </description>
    <release version="3.7.2" date="2021-11-09"/>
+    <description>
+     <ul>
+      <li>Fixed Preferences/Window "Reset window layout to defaults" not doing much.</li>
+      <li>Fixed Gradle builder failing to compile LSe if sources were not checked out from Git.</li>
+      <li>You can now swap the placement of main canvas and component tree/properties pane.</li>
+      <li>Several bug fixes.</li>
+     </ul>
+    </description>
    <release version="3.7.1" date="2021-10-21"/>
+    <description>
+     <ul>
+      <li>Logisim has now an internal font-chooser to comply to the font-values used.</li>
+      <li>Several bug fixes.</li>
+     </ul>
+    </description>
    <release version="3.7.0" date="2021-10-12"/>
+    <description>
+     <ul>
+      <li>Reworked the slider component in the I/O extra library.</li>
+      <li>Tick clock frequency display moved to left corner. It's also bigger and text color is configurable.</li>
+      <li>Completely rewritten command line argument parser:</li>
+       <ul>
+        <li>All options have both short and long version now,</li>
+        <li>All long arguments require `--` prefix i.e. `--version`,</li>
+        <li>All short arguments require single `-` as prefix i.e. `-v`,</li>
+        <li>`-clearprefs` is now `--clear-prefs`,</li>
+        <li>`-clearprops` option is removed (use `--clear-prefs` instead),</li>
+        <li>`-geom` is now `--geometry`,</li>
+        <li>`-nosplash` is now `--no-splash` or `-ns`,</li>
+        <li>`-sub` is now `--substitute` or `-s`,</li>
+        <li>`-testvector` is now `--test-vector` or `-w`,</li>
+        <li>`-test-fpga-implementation` is now `--test-fpga` or `-f`,</li>
+        <li>`-questa` is removed.</li>
+       </ul>
+      <li>PortIO HDL generator and component bug-fixed.</li>
+      <li>Cleanup/rework of the HDL-generation.</li>
+      <li>Each circuit stores/restores the last board used for Download (handy for templates to give to students)</li>
+      <li>Fixed startup crash related to incorrectly localized date format.</li>
+      <li>Added a setting to select lower- or upper-case VHDL keywords.</li>
+      <li>Added project export feature.</li>
+      <li>Cleaned-up the written .circ file.</li>
+     </ul>
+    </description>
    <release version="3.6.1" date="2021-09-27"/>
+    <description>
+     <ul>
+      <li>Fixed bug in LED-array</li>
+     </ul>
+    </description>
    <release version="3.6.0" date="2021-09-05"/>
+    <description>
+     <ul>
+      <li>Introducing project logo.
+      <li>Fixed project loader to correctly handle hex values with a 1 in bit 63rd.
+      <li>Added TTL74x34 hex buffer gate.
+      <li>Made pins' tooltips more descriptive for 74161.
+      <li>Added new component LED Bar.
+      <li>Added 74157 and 74158: Quad 2-line to1-line selectors.
+      <li>Added option to configure canvas' and grid's colors.
+      <li>Added DIP switch state visual feedback for ON state.
+      <li>Augmented direction verbal labels (East, North, etc), with corresponding arrow symbols.
+      <li>Application title string now adds app name/version at the very end of the title.
+      <li>Added option to configure size of connection pin markers.
+      <li>Added TTL 74x139: dual 2-line to 4-lines decoders.
+      <li>Fixed missing port on DotMatrix.
+      <li>Combined `Select Location` from Plexers and `Gate Location` from Wiring to one attribute.
+       <ul>
+        <li>comparability for Transistors and Transmission Gates.
+            When opening old .circ files, they will have the default `Select Location` ("Bottom/Left").</li>
+       </ul>
+      <li>Replace DarkLaf with FlatLaf for better compatibility.
+      <li>Adds "Rotate Left" context menu action.
+      <li>Display "Too few inputs for table" if Karnaugh Map has only 1 input.
+      <li>HexDisplay is stays blank if no valid data is fed instead of showing "H" [#365].
+      <li>Project's "Dirty" (unsaved) state is now also reflected by adding `*` marker to the window title.
+      <li>Support for `AnimatedIcon` has been completely removed.
+      <li>Canvas Zoom controls new offer wider range of zoom and three level of granularity.
+      <li>Added predefined quick zoom buttons.
+      <li>Tons of code cleanup and internal improvements.
+      <li>Added duplicated component placement on same location refusal
+      <li>Fixed pin duplication on load in case a custom apearance is used for a circuit
+      <li>Added LED-array support for FPGA-boards
+      <li>Improved partial placement on FPGA-boards for multi-pin components
+      <li>Fixed several small bugs
+      <li>Each circuit will now remember, restore, and save:
+       <ul>
+        <li>The last tick-frequency used for simulation</li>
+        <li>The last download frequency used</li>
+       </ul>
+      <li>Removed obsolete VHDL-Architecture attribute from circuit</li>
+     </ul>
+    </description>
    <release version="3.5.0" date="2021-05-25"/>
+    <description>
+     <ul>
+      <li>Many code-cleanups, bug fixes and again the chronogram.</li>
+     </ul>
+    </description>
    <release version="3.4.2" date="2021-02-19"/>
    <release version="3.4.1" date="2020-12-25"/>
    <release version="3.3.0" date="2020-01-09"/>
