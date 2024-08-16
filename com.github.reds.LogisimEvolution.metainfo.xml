@@ -29,6 +29,9 @@
   </screenshot>
  </screenshots>
  <releases>
+   <release version="3.9.0" date="2024-08-15">
+      <description></description>
+   </release>
    <release version="3.8.0" date="2022-10-02"/>
     <description>
      <ul>
@@ -40,7 +43,7 @@
       <li>Removed autolabler for tunnels, such that all get the same label in case of renaming.</li>
       <li>Fixed bug preventing TTL 7442, 7443 and 7444 from being placed on the circuit canvas.</li>
       <li>Sub-circuit can now be deleted with `DELETE` key, along with `BACKSPACE` used so far.</li>
-      <li>Fixed `Simulate` -> `Timing Diagram` not opening when using "Nimbus" look and feel.</li>
+      <li>Fixed `Simulate` -&gt; `Timing Diagram` not opening when using "Nimbus" look and feel.</li>
       <li>Fixed pressing `CTRL`+`0` selecting the wrong element in the toolbar.</li>
       <li>Fixed TTL 7485 `7485HdlGenerator` generating wrong HDL type.</li>
       <li>Fixed TTL 74139, 7447 outputting inverted logic</li>
