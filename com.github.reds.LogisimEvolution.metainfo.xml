@@ -23,10 +23,14 @@
   </ul>
  </description>
  <screenshots>
-  <screenshot type="default">
-   <image>https://raw.githubusercontent.com/logisim-evolution/logisim-evolution/develop/docs/img/logisim-evolution-01.png</image>
-   <image>https://raw.githubusercontent.com/logisim-evolution/logisim-evolution/develop/docs/img/logisim-evolution-02.png</image>
-  </screenshot>
+   <screenshot type="default">
+     <image>https://raw.githubusercontent.com/logisim-evolution/logisim-evolution/develop/docs/img/logisim-evolution-01.png</image>
+     <caption>Design view</caption>
+   </screenshot>
+   <screenshot>
+     <image>https://raw.githubusercontent.com/logisim-evolution/logisim-evolution/develop/docs/img/logisim-evolution-02.png</image>
+     <caption>Design view</caption>
+   </screenshot>
  </screenshots>
  <releases>
    <release version="3.9.0" date="2024-08-15">
