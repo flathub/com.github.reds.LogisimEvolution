@@ -27,25 +27,23 @@ modules:
     buildsystem: simple
     build-commands:
       - install -D com.github.reds.LogisimEvolution.metainfo.xml /app/share/metainfo/com.github.reds.LogisimEvolution.metainfo.xml
-      - install -D logisim-icon-256.png /app/share/icons/hicolor/256x256/apps/com.github.reds.LogisimEvolution.png
+      - install -D artwork/logisim-evolution-icon.svg /app/share/icons/hicolor/scalable/apps/com.github.reds.LogisimEvolution.svg
       - install -D LogisimEvolution.jar /app/bin/LogisimEvolution.jar
       - install -D LogisimEvolution.sh /app/bin/LogisimEvolution.sh
-      - install -D com.github.reds.LogisimEvolution.desktop /app/share/applications/com.github.reds.LogisimEvolution.desktop
-      - install -D com.github.reds.LogisimEvolution.xml /app/share/mime/packages/com.github.reds.LogisimEvolution.xml
+      - install -D support/Flatpak/com.github.reds.LogisimEvolution.desktop /app/share/applications/com.github.reds.LogisimEvolution.desktop
+      - install -D support/Flatpak/com.github.reds.LogisimEvolution.xml /app/share/mime/packages/com.github.reds.LogisimEvolution.xml
     sources:
       - type: file
         path: com.github.reds.LogisimEvolution.metainfo.xml
       - type: file
-        url: https://raw.githubusercontent.com/logisim-evolution/logisim-evolution/master/support/Flatpak/com.github.reds.LogisimEvolution.desktop
-        sha256: e36c6153929d1d43b73c73daca979a1b1eea3bbe01ece3a835814ac9876b5283
-      - type: file
-        url: https://raw.githubusercontent.com/logisim-evolution/logisim-evolution/develop/src/main/resources/resources/logisim/img/logisim-icon-256.png
-        sha256: b67a763c684b84d46ad76f46db540449654534eeec3c8722d1cffa06d43e6002
-      - type: file
         path: LogisimEvolution.sh
-      - type: file
-        url: https://raw.githubusercontent.com/logisim-evolution/logisim-evolution/master/support/Flatpak/com.github.reds.LogisimEvolution.xml
-        sha256: 6023d82aa192d089f55feece2c29874de94a5231e18efd2caf9baf03486badd7
+      - type: archive
+        url: https://github.com/logisim-evolution/logisim-evolution/archive/refs/tags/v3.8.0.tar.gz
+        sha256: 7a49558a490a0df886b3ea488f12e4ea887a2ec8c278872dca39b2bebfaed3ee
+        x-checker-data:
+          type: anitya
+          project-id: 155486
+          url-template: https://github.com/logisim-evolution/logisim-evolution/archive/refs/tags/v$version.tar.gz
       - type: file
         url: https://github.com/logisim-evolution/logisim-evolution/releases/download/v3.8.0/logisim-evolution-3.8.0-all.jar
         dest-filename: LogisimEvolution.jar
