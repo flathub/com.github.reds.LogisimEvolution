@@ -43,13 +43,9 @@
           <li>Added support for scanning 7-segment display on FPGA-boards</li>
           <li>Added first support for the openFpga toolchain for the ecp5 family</li>
           <li>Note that this is experimental for the moment, so use it at your own risk.</li>
-          <li>Improved Chinese localization
-            <ul>
-              <li>Changed language code from cn to zh.</li>
-              <li>Chinese users (also including those who use other forks of Logisim</li>
-              <li>that are using cn language code) will be required to manually modify language settings.</li>
-            </ul>
-          </li>
+          <li>Improved Chinese localization</li>
+          <li>Changed language code from cn to zh.</li>
+          <li>Chinese users (also including those who use other forks of Logisim that are using cn language code) will be required to manually modify language settings.</li>
           <li>Fixed select port positioning on Multiplexer to be more consistent in some cases</li>
           <li>Fixed appearance of LSe desktop icon</li>
           <li>Update controlled buffer behavior to pass U and E inputs while enabled</li>
@@ -74,7 +70,7 @@
         </ul>
       </description>
    </release>
-   <release version="3.8.0" date="2022-10-02"/>
+   <release version="3.8.0" date="2022-10-02">
     <description>
      <ul>
       <li>Added reset value attribute to input pins</li>
@@ -100,7 +96,8 @@
       <li>Removed fixed LM_Licence setting</li>
      </ul>
     </description>
-   <release version="3.7.2" date="2021-11-09"/>
+   </release>
+   <release version="3.7.2" date="2021-11-09">
     <description>
      <ul>
       <li>Fixed Preferences/Window "Reset window layout to defaults" not doing much.</li>
@@ -109,33 +106,32 @@
       <li>Several bug fixes.</li>
      </ul>
     </description>
-   <release version="3.7.1" date="2021-10-21"/>
+   </release>
+   <release version="3.7.1" date="2021-10-21">
     <description>
      <ul>
       <li>Logisim has now an internal font-chooser to comply to the font-values used.</li>
       <li>Several bug fixes.</li>
      </ul>
     </description>
-   <release version="3.7.0" date="2021-10-12"/>
+   </release>
+   <release version="3.7.0" date="2021-10-12">
     <description>
      <ul>
       <li>Reworked the slider component in the I/O extra library.</li>
       <li>Tick clock frequency display moved to left corner. It's also bigger and text color is configurable.</li>
-      <li>Completely rewritten command line argument parser:
-       <ul>
-        <li>All options have both short and long version now,</li>
-        <li>All long arguments require `--` prefix i.e. `--version`,</li>
-        <li>All short arguments require single `-` as prefix i.e. `-v`,</li>
-        <li>`-clearprefs` is now `--clear-prefs`,</li>
-        <li>`-clearprops` option is removed (use `--clear-prefs` instead),</li>
-        <li>`-geom` is now `--geometry`,</li>
-        <li>`-nosplash` is now `--no-splash` or `-ns`,</li>
-        <li>`-sub` is now `--substitute` or `-s`,</li>
-        <li>`-testvector` is now `--test-vector` or `-w`,</li>
-        <li>`-test-fpga-implementation` is now `--test-fpga` or `-f`,</li>
-        <li>`-questa` is removed.</li>
-       </ul>
-      </li>
+      <li>Completely rewritten command line argument parser:</li>
+      <li>All options have both short and long version now,</li>
+      <li>All long arguments require `--` prefix i.e. `--version`,</li>
+      <li>All short arguments require single `-` as prefix i.e. `-v`,</li>
+      <li>`-clearprefs` is now `--clear-prefs`,</li>
+      <li>`-clearprops` option is removed (use `--clear-prefs` instead),</li>
+      <li>`-geom` is now `--geometry`,</li>
+      <li>`-nosplash` is now `--no-splash` or `-ns`,</li>
+      <li>`-sub` is now `--substitute` or `-s`,</li>
+      <li>`-testvector` is now `--test-vector` or `-w`,</li>
+      <li>`-test-fpga-implementation` is now `--test-fpga` or `-f`,</li>
+      <li>`-questa` is removed.</li>
       <li>PortIO HDL generator and component bug-fixed.</li>
       <li>Cleanup/rework of the HDL-generation.</li>
       <li>Each circuit stores/restores the last board used for Download (handy for templates to give to students)</li>
@@ -145,13 +141,15 @@
       <li>Cleaned-up the written .circ file.</li>
      </ul>
     </description>
-   <release version="3.6.1" date="2021-09-27"/>
+   </release>
+   <release version="3.6.1" date="2021-09-27">
     <description>
      <ul>
       <li>Fixed bug in LED-array</li>
      </ul>
     </description>
-   <release version="3.6.0" date="2021-09-05"/>
+   </release>
+   <release version="3.6.0" date="2021-09-05">
     <description>
      <ul>
       <li>Introducing project logo.</li>
@@ -167,12 +165,9 @@
       <li>Added option to configure size of connection pin markers.</li>
       <li>Added TTL 74x139: dual 2-line to 4-lines decoders.</li>
       <li>Fixed missing port on DotMatrix.</li>
-      <li>Combined `Select Location` from Plexers and `Gate Location` from Wiring to one attribute.
-       <ul>
-        <li>comparability for Transistors and Transmission Gates.
-            When opening old .circ files, they will have the default `Select Location` ("Bottom/Left").</li>
-       </ul>
-      </li>
+      <li>Combined `Select Location` from Plexers and `Gate Location` from Wiring to one attribute.</li>
+      <li>comparability for Transistors and Transmission Gates.
+          When opening old .circ files, they will have the default `Select Location` ("Bottom/Left").</li>
       <li>Replace DarkLaf with FlatLaf for better compatibility.</li>
       <li>Adds "Rotate Left" context menu action.</li>
       <li>Display "Too few inputs for table" if Karnaugh Map has only 1 input.</li>
@@ -187,21 +182,20 @@
       <li>Added LED-array support for FPGA-boards</li>
       <li>Improved partial placement on FPGA-boards for multi-pin components</li>
       <li>Fixed several small bugs</li>
-      <li>Each circuit will now remember, restore, and save:
-       <ul>
-        <li>The last tick-frequency used for simulation</li>
-        <li>The last download frequency used</li>
-       </ul>
-      </li>
+      <li>Each circuit will now remember, restore, and save:</li>
+      <li>The last tick-frequency used for simulation</li>
+      <li>The last download frequency used</li>
       <li>Removed obsolete VHDL-Architecture attribute from circuit</li>
      </ul>
     </description>
-   <release version="3.5.0" date="2021-05-25"/>
+   </release>
+   <release version="3.5.0" date="2021-05-25">
     <description>
      <ul>
       <li>Many code-cleanups, bug fixes and again the chronogram.</li>
      </ul>
     </description>
+   </release>
    <release version="3.4.2" date="2021-02-19"/>
    <release version="3.4.1" date="2020-12-25"/>
    <release version="3.3.0" date="2020-01-09"/>
