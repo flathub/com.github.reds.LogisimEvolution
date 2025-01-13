@@ -38,16 +38,16 @@ modules:
       - type: file
         path: LogisimEvolution.sh
       - type: archive
-        url: https://github.com/logisim-evolution/logisim-evolution/archive/refs/tags/v3.8.0.tar.gz
-        sha256: 7a49558a490a0df886b3ea488f12e4ea887a2ec8c278872dca39b2bebfaed3ee
+        url: https://github.com/logisim-evolution/logisim-evolution/archive/refs/tags/v3.9.0.tar.gz
+        sha256: def2aa2f76545c1580d473b7a7f9259507bb2d2aae91a8d30ec903550780ecfc
         x-checker-data:
           type: anitya
           project-id: 155486
           url-template: https://github.com/logisim-evolution/logisim-evolution/archive/refs/tags/v$version.tar.gz
       - type: file
-        url: https://github.com/logisim-evolution/logisim-evolution/releases/download/v3.8.0/logisim-evolution-3.8.0-all.jar
+        url: https://github.com/logisim-evolution/logisim-evolution/releases/download/v3.9.0/logisim-evolution-3.9.0-all.jar
         dest-filename: LogisimEvolution.jar
-        sha256: 4c59be7dadc2329d0e3219ca05ce9c2c858641b206fcea4e3821bb79aef06c2c
+        sha256: 43153587a2cacd6cb6e70b57804b9f3d3d0ab08b0b86b2a7abd091712e0c9737
         x-checker-data:
           type: anitya
           project-id: 155486

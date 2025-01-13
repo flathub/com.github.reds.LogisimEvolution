@@ -29,6 +29,47 @@
   </screenshot>
  </screenshots>
  <releases>
+   <release version="3.9.0" date="2024-08-15">
+      <description>
+        <ul>
+          <li>Updated Java requirement to Java 21.</li>
+          <li>Added an autosave feature along with preferences for it.</li>
+          <li>Added a new preference to allow the user to choose the action keys for many functions.</li>
+          <li>Changed RAM default output from error to undefined</li>
+          <li>Added support for scanning 7-segment display on FPGA-boards</li>
+          <li>Added first support for the openFpga toolchain for the ecp5 family</li>
+          <li>Note that this is experimental for the moment, so use it at your own risk.</li>
+          <li>Improved Chinese localization
+            <ul>
+              <li>Changed language code from cn to zh.</li>
+              <li>Chinese users (also including those who use other forks of Logisim</li>
+              <li>that are using cn language code) will be required to manually modify language settings.</li>
+            </ul>
+          </li>
+          <li>Fixed select port positioning on Multiplexer to be more consistent in some cases</li>
+          <li>Fixed appearance of LSe desktop icon</li>
+          <li>Update controlled buffer behavior to pass U and E inputs while enabled</li>
+          <li>Introduced user-defined color for components.</li>
+          <li>Made component icons more uniform.</li>
+          <li>Added architecture designation to macOS build.</li>
+          <li>Fixed Karnaugh map color index bug.</li>
+          <li>Attribute sheet now honors application color theme.</li>
+          <li>Attribute sheet now displays HEX value of color properties.</li>
+          <li>Added TTL 7487: 4-bit True/complement, zero/one elements</li>
+          <li>Fixed Wrong HDL generation bug in the PortIO component and added the single bit version.</li>
+          <li>Added TTL 74151: 8-line to 1 line data selector</li>
+          <li>Added TTL 74153: dual 4-line to 1 line data selector</li>
+          <li>Added TTL 74181: arithmetic logic unit</li>
+          <li>Added TTL 74182: look-ahead carry generator</li>
+          <li>Added TTL 74299: 8-bit universal shift register with three-state outputs</li>
+          <li>Added TTL 74381: arithmetic logic unit</li>
+          <li>Added TTL 74541: Octal buffers with three-state outputs</li>
+          <li>Added TTL 74670: 4-by-4 register file with three-state outputs</li>
+          <li>Added 16 bit floating point support for floating point arithmetic</li>
+          <li>Fixed the problem of keys getting assigned to focusing on the cell of the table in "properties" section along with its actual intent</li>
+        </ul>
+      </description>
+   </release>
    <release version="3.8.0" date="2022-10-02"/>
     <description>
      <ul>
@@ -40,7 +81,7 @@
       <li>Removed autolabler for tunnels, such that all get the same label in case of renaming.</li>
       <li>Fixed bug preventing TTL 7442, 7443 and 7444 from being placed on the circuit canvas.</li>
       <li>Sub-circuit can now be deleted with `DELETE` key, along with `BACKSPACE` used so far.</li>
-      <li>Fixed `Simulate` -> `Timing Diagram` not opening when using "Nimbus" look and feel.</li>
+      <li>Fixed `Simulate` -&gt; `Timing Diagram` not opening when using "Nimbus" look and feel.</li>
       <li>Fixed pressing `CTRL`+`0` selecting the wrong element in the toolbar.</li>
       <li>Fixed TTL 7485 `7485HdlGenerator` generating wrong HDL type.</li>
       <li>Fixed TTL 74139, 7447 outputting inverted logic</li>
