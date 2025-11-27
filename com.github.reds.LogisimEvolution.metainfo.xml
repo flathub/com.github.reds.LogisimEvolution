@@ -205,4 +205,11 @@
    <release version="3.3.0" date="2020-01-09"/>
  </releases>
  <content_rating type="oars-1.1"/>
+ <keywords>
+  <keyword>digital logic simulator</keyword>
+  <keyword>circuit designer software</keyword>
+  <keyword>electronics education tool</keyword>
+  <keyword>vhdl editor</keyword>
+  <keyword>digital circuit simulator</keyword>
+ </keywords>
 </component>
