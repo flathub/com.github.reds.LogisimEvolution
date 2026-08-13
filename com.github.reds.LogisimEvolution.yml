@@ -45,9 +45,9 @@ modules:
           project-id: 155486
           url-template: https://github.com/logisim-evolution/logisim-evolution/archive/refs/tags/v$version.tar.gz
       - type: file
-        url: https://github.com/logisim-evolution/logisim-evolution/releases/download/v4.0.0/logisim-evolution-4.0.0-all.jar
+        url: https://github.com/logisim-evolution/logisim-evolution/releases/download/v4.1.0/logisim-evolution-4.1.0-all.jar
         dest-filename: LogisimEvolution.jar
-        sha256: 699f957a41d52c0b4fcbc2899a15a9182e91c1906e8b7d6534208004387161f4
+        sha256: fe6386a3217a591bcc311a4eda49e1f43a389b499dd3d0f6f40f344fc85f2577
         x-checker-data:
           type: anitya
           project-id: 155486
